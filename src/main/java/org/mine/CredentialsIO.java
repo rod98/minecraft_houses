@@ -21,10 +21,10 @@ public class CredentialsIO {
         return this.props;
     }
 
-    public CredentialsIO(String cred_path) throws Exception {
+    public CredentialsIO(String cred_path) {
         this.cred_path = cred_path;
         // props = new Properties();
-        read();
+        // read();
     }
 
     public void read() throws Exception {

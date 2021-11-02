@@ -35,8 +35,8 @@ public class App
                 CredentialsIO credio  = new CredentialsIO(cred_path);
                 AppStarter    starter = new AppStarter   (credio);
 
-                if (credio.fileExists())
-                    starter.start_app();        
+                if (credio.fileExists()) 
+                    starter.start_app(); 
                 else
                     new WindowNewCredentials(credio, fonts[0], starter).setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
